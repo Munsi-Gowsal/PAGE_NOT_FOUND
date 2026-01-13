@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aura Dining | Portfolio of Excellence</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container">
-        <div class="nav-wrapper">
-          <div class="brand">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="styles.css">
+    <title>NavBar</title>
+</head>
+<body>
+    <nav>
+        
+          
+        <input type="checkbox" id="sidebar_active">
+        <label for="sidebar_active" class="open-sidebar-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </label>
+
+        <label id="overlay" for="sidebar_active"></label>
+        <div class="links">
+           
+            <label for="sidebar_active" class="close-sidebar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </label>
+
+             <div class="brand">
             <div class="brand-main">AURA</div>
             <div class="brand-sub">DINING GROUP</div>
           </div>
 
-          <!-- Hamburger Menu Button -->
-          <button class="hamburger" aria-label="Toggle navigation menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#locations">Locations</a>
-            <a href="#dine-in">The Spaces</a>
-            <a href="#reservations">Reservations</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#" class="btn-book">Book Now</a>
-          </nav>
+            <a href="#home">HOME</a>
+            <a href="#locations">LOCATIONS</a>
+            <a href="#theSpaces">THE SPACES</a>
+            <a href="#reservations">RESERVATIONS</a>
+            <a href="#gallery">GALLERY</a>
+            <div class="btn">
+                <a href="#" class="btn-book">Book Now</a>
+            </div>
+            
         </div>
-      </div>
-    </header>
-  </body>
+    </nav>
+</body>
 </html>
