@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Reservation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <header class="form-header">
+        <p class="subtitle">SECURE YOUR TABLE</p>
+        <h1 class="title">Global Reservation</h1>
+      </header>
+
+      <form class="reservation-form" id="reservationForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="restaurant" class="form-label">SELECT RESTAURANT</label>
+            <select id="restaurant" name="restaurant" class="form-input select-input" required>
+              <option value="">Choose a Venue</option>
+              <option value="downtown">Downtown Location</option>
+              <option value="uptown">Uptown Location</option>
+              <option value="waterfront">Waterfront Location</option>
+              <option value="garden">Garden Terrace</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fullName" class="form-label">FULL NAME</label>
+            <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Doe" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email" class="form-label">EMAIL ADDRESS</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="john@aura-dining.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (212) 000-0000" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="guests" class="form-label">GUESTS</label>
+            <select id="guests" name="guests" class="form-input select-input" required>
+              <option value="">Number of Guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7">7 Guests</option>
+              <option value="8">8 Guests</option>
+              <option value="9">9+ Guests</option>
+            </select>
+          </div>
+          <div class="form-group date-time-group">
+            <div class="date-group">
+              <label for="date" class="form-label">DATE</label>
+              <input type="date" id="date" name="date" class="form-input date-input" required>
+            </div>
+            <div class="time-group">
+              <label for="time" class="form-label">TIME</label>
+              <input type="time" id="time" name="time" class="form-input time-input" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="specialRequests" class="form-label">SPECIAL REQUESTS</label>
+          <textarea id="specialRequests" name="specialRequests" class="form-input textarea-input" placeholder="Anniversaries, allergies, or specific room preferences..." rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Confirm Booking Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
