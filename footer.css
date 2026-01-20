@@ -1,0 +1,124 @@
+:root {
+  --aura-gold: #d4af37;
+  --aura-dark: #121212;
+  --aura-text: #888;
+  --aura-cream: #f9f7f2;
+  --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+body {
+  background-color: black;
+  color: rgb(235, 233, 233);
+  font-family: "Poppins", sans-serif;
+}
+
+.main-footer {
+  padding: 80px 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.container-footer {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.brand-name {
+  display: block;
+  font-size: 35px;
+  letter-spacing: 6px;
+  color: #d4af37;
+}
+
+.brand:hover .brand-name {
+  color: rgb(243, 42, 42);
+}
+
+.brand-about {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #888;
+}
+
+.footer-quote {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer-col h4 {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-col h4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 40px;
+  height: 1px;
+  background: #d4af37;
+  transition: var(--transition);
+}
+
+.footer-col:hover h4::after {
+  width: 100%;
+}
+
+.footer-col p {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 10px;
+  transition: var(--transition);
+}
+
+.footer-col p:hover {
+  color: #ffffff;
+  transform: translateX(8px);
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: grey;
+  text-decoration: none;
+  font-size: 13px;
+  margin-right: 15px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.social-links a:hover {
+  color: gold;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .grid-container {
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+  }
+}
