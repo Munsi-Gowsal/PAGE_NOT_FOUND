@@ -1,43 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Dining | Portfolio of Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="file.css" />
     <link rel="stylesheet" href="styles.css">
-    <title>NavBar</title>
-</head>
-<body>
-    <nav>
-        
-          
-        <input type="checkbox" id="sidebar_active">
-        <label for="sidebar_active" class="open-sidebar-btn">
-           <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-        </label>
-
-        <label id="overlay" for="sidebar_active"></label>
-        <div class="links">
-           
-            <label for="sidebar_active" class="close-sidebar-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-            </label>
-
-             <div class="brand">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="brand">
             <div class="brand-main">AURA</div>
             <div class="brand-sub">DINING GROUP</div>
           </div>
 
-            <a href="#home">HOME</a>
-            <a href="#locations">LOCATIONS</a>
-            <a href="#theSpaces">THE SPACES</a>
-            <a href="#reservations">RESERVATIONS</a>
-            <a href="#gallery">GALLERY</a>
-            <div class="btn">
-                <a href="#" class="btn-book">Book Now</a>
-            </div>
-            
+          <!-- Hamburger Menu Button -->
+          <button class="hamburger" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#locations">Locations</a>
+            <a href="#dine-in">The Spaces</a>
+            <a href="#reservations">Reservations</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#" class="btn-book">Book Now</a>
+          </nav>
         </div>
-    </nav>
-</body>
+      </div>
+    </header>
+    <!-- Hero-Content -->
+    <section id="home" class="hero">
+        <div class="container hero-content text-center">
+            <p class="subtitle">PORTFOLIO OF DISTINCTION</p>
+            <h1>Atmosphere <br><span>Redefined</span></h1>
+            <p class="tagline">Explore our collection of award-winning venues across the whole city</p>
+            <div class="home-actions"></div>
+            <div class="hero-actions">
+                <a href="#locations" class="btn">View Our Venues</a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </section>
+    <!-- Locations Section -->
+    <section id="locations" class="locations-section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Our Venues</p>
+          <h2>Select Your Experience</h2>
+        </div>
+
+        <div class="locations-grid">
+          <!-- Venue 1 -->
+          <div class="location-card">
+            <div class="location-img">
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxnEpjQKxTYUKTpUqiWifwdQEeaZxmSN28DPBpvtHuBV1fRnXOWCPnh-D3DA9-qD20frE6gahLrgadg8eJE8r53Fc-54g5m3N8gbAR6d4v0DUbgt0H78FjrjYmf5PbohF5xLxhK=s1360-w1360-h1020-rw"
+                alt="Spice Terrace"
+              />
+            </div>
+            <div class="location-content">
+              <h3>Spice Terrace</h3>
+              <p class="location-tag">Coastal • Modern Serenity</p>
+              <p>
+                Spice Terrace, the North Indian poolside restaurant in Bengaluru, 
+                Karnataka serves a selection of innovative regional specialties and award-winning craft beers from beside our pool.
+                Savor Indian dishes and sip cocktails as you unwind after a full day.
+              </p>
+              <a href="https://www.marriott.com/en-us/dining/restaurant-bar/blrjw-jw-marriott-hotel-bengaluru/5281786-spice-terrace.mi" class="location-link">About Spice Terrace</a>
+            </div>
+          </div>
+          <!-- Venue 2 -->
+          <div class="location-card">
+            <div class="location-img">
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipNb3wFLqhlD8IdYTRsBgztQFOsjpdx-DMqDxZTq=s1360-w1360-h1020-rw"
+                alt="Lotus Pavilion"
+              />
+            </div>
+            <div class="location-content">
+              <h3>Lotus Pavilion</h3>
+              <p class="location-tag">Traditional • Asian Fusion</p>
+              <p>
+                The ideal sit-out restaurant – any time of the year, 
+                you can enjoy a fine line up of beverages from around the world, 
+                with a selection of gourmet tapas and hors d’oeuvres from our carefully crafted menu.
+              </p>
+              <a href="https://www.marriott.com/en-us/dining/restaurant-bar/blrgl-itc-gardenia-a-luxury-collection-hotel-bengaluru/6419615-lotus-pavilion.mi" class="location-link">About Lotus Pavilion</a>
+            </div>
+          </div>
+           <!-- Venue 3 -->
+          <div class="location-card">
+            <div class="location-img">
+              <img
+                src="https://www.theleela.com/prod/content/assets/aio-banner/dekstop/Le%20Cirque%20Signature_1920x950.webp?VersionId=0pKfpO1T3z6eokVWlVzLgub0s7z_5sKH"
+                alt="Le Cirque Signature"
+              />
+            </div>
+            <div class="location-content">
+              <h3>Le Cirque Signature</h3>
+              <p class="location-tag">Tranquil • Royal Classic</p>
+              <p>
+                Le Cirque Signature where elegance and artistry come together in perfect harmony. 
+                The soft interplay of beige, ebony, and ochre tones reflects off a grand Murano chandelier, 
+                creating a sophisticated atmosphere that sets the stage for the exquisite Franco-Italian delicacies the restaurant is celebrated for.
+              </p>
+              <a href="https://www.theleela.com/the-leela-palace-bengaluru/restaurants/le-cirque-signature" class="location-link">About Le Cirque Signature</a>
+            </div>
+          </div>
+           <!-- Venue 4 -->
+          <div class="location-card">
+            <div class="location-img">
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSz5ilm3fnQ5g9x0Kri5zrsPmo3BJuG6c5GNWpIMA5pswyaIEDvzrar12wUqNxKdUpiVLaZGHZ0BUaKOHujVYYdrGOYPSYQv-3trTg7e_bIrOH-UiJ2NQsofS-_oneB7SqD3P0B9=s1360-w1360-h1020-rw"
+                alt="Salvadores Fine Dining"
+              />
+            </div>
+            <div class="location-content">
+              <h3>Salvadores Fine Dining</h3>
+              <p class="location-tag">The Flagship • Classic Grandeur</p>
+              <p>
+                Salvadores fine dine is dedicated to the legacy of Joseph Salvadore Victoria, 
+                a pioneer in the Wine Trade in Sri Lanka. We honour his commitment to excellence in food and wine, 
+                striving to maintain the highest standards that he set.
+              </p>
+              <a href="https://salvadores.co.in/" class="location-link">About Salvadores Fine Dining </a>
+            </div>
+          </div>
+           <!-- Venue 5 -->
+          <div class="location-card">
+            <div class="location-img">
+              <img
+                src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwbLu661D6bQGY43_BiXoOerknWl_6J6dDjNJEff7lute4wrYsuzrTee3jS_CbBzivVQ9ENeKdqUojZNIF2oOlQloHdIZTxw0j9-8QFpr9sVURukDWLWZT0RnxwQqc5vfWi7Ds=s1360-w1360-h1020-rw"
+                alt="LUPA"
+              />
+            </div>
+            <div class="location-content">
+              <h3>LUPA</h3>
+              <p class="location-tag">Serene • Modern Italian</p>
+              <p>
+                Lupa’s cuisine is evolutionary, building layers of nuance & surprise into sedulously sourced ingredients.
+                 Years of experience has guided the vision behind each menu, building on provenance & the aspiration to feed. 
+
+              </p>
+              <a href="https://lupa.co.in/cuisine/" class="location-link">About LUPA</a>
+            </div>
+          </div>
+           <!-- Venue 6 -->
+          <div class="location-card">
+            <div class="location-img">
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipNqZcXhQDMq-NIhta91TqsHRwCmf4-C4_xwRGx4=s1360-w1360-h1020-rw"
+                alt="Shiro"
+              />
+            </div>
+            <div class="location-content">
+              <h3>Shiro</h3>
+              <p class="location-tag">Lounge • Urban Edge</p>
+              <p>
+                Shiro offers a unique dining experience that combines traditional Asian flavors with contemporary culinary techniques. 
+                The restaurant's ambiance is designed to transport guests to an exotic locale, featuring elegant decor and a serene atmosphere.
+              </p>
+              <a href="https://ubcitybangalore.in/portfolio-item/shiro/" class="location-link">About Shiro</a>
+            </div>
+          </div>
+          
+  </body>
 </html>
