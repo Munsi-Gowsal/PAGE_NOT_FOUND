@@ -4,15 +4,11 @@ Welcome to the Aura Dining Group . it is a luxury digital experience crafted to 
 
 
 👥 Our Team
-Mehul Raj: Created the Navbar (top menu) and added the JavaScript.
-
-Himadrish: Designed the Main Interface and the Venue Locations grid where you see the restaurants.
-
-Munsi Gowsal: Made the Signature Dishes section and the Footer. He also combined (merged) everyone's code together.
-
-Ksheetesh: Built the Registration Form (Reservation section) where users enter their details.
-
-Abhishek: Added the JavaScript to the registration form so it works and shows the "Success" message (with help from Munsi).
+Mehul Raj
+Munsi Gowsal
+Himadrish Bhowmik
+Kshiteesh Pandey
+Abhishek Deshmukh
 
 
 🛠️ Built With
