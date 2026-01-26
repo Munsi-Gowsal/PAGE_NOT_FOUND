@@ -1,4 +1,4 @@
-/* Consolidated / deduplicated stylesheet for PAGE_NOTT_FOUND */
+
 :root {
   --dark: #130b08;
   --gold: #c5a059;
@@ -134,7 +134,7 @@ a {
   border-radius: 1px;
 }
 
-/* Hero */
+
 .hero {
   height: 100vh;
   position: relative;
@@ -194,7 +194,7 @@ a {
   transform: translateY(-3px);
 }
 
-/* Locations */
+
 .locations-section {
   padding: 120px 0;
   background: var(--white);
@@ -278,7 +278,7 @@ a {
   color: var(--gold);
 }
 
-/* Dine-in / Dishes */
+
 .dine-in-section {
   padding: 120px 0;
   background: var(--dark);
@@ -338,7 +338,7 @@ a {
   color: var(--gold);
 }
 
-/* Form / Reservation */
+
 .form-wrapper {
   width: 100%;
   max-width: 800px;
@@ -453,7 +453,7 @@ a {
   gap: 30px;
 }
 
-/* Responsive */
+
 @media (max-width: 992px) {
   .locations-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -612,27 +612,22 @@ footer {
 
 .quote {
   display: flex;
-  /* FIX: 'flex: wrap' is invalid shorthand. Use 'flex-wrap' */
   flex-wrap: wrap;
-  /* CHANGE 2: This centers flex items (the quote) horizontally */
+ 
   justify-content: center;
 }
 
 .footer-quote {
-  /* FIX: Removed 'margin-left: 25%' (magic numbers break responsiveness) */
-  /* FIX: Added text-align to center the text inside the flex item */
   text-align: center;
   margin-top: 20px;
   font-size: 0.9rem;
   color: #888;
 }
 
-/* Optional: Center the text inside the grid columns */
 .footer-col {
   text-align: center;
 }
 
-/* Optional: If you want the underline to start from the center */
 .footer-col h4::after {
   left: 50%;
   transform: translateX(-50%);
@@ -651,7 +646,6 @@ footer {
 .footer-col h4::after {
   content: "";
   position: absolute;
-  /* CHANGE 3: Center the underline relative to the text */
   left: 50%;
   transform: translateX(-50%);
   bottom: -5px;
@@ -674,13 +668,11 @@ footer {
 
 .footer-col p:hover {
   color: #ffffff;
-  /* Changed translate to simply move right, or remove if you want center static */
   transform: translateX(8px);
 }
 
 .social-links {
   margin-top: 20px;
-  /* CHANGE 4: Ensure social links are centered if parent is centered */
   text-align: center;
 }
 
@@ -688,7 +680,6 @@ footer {
   color: grey;
   text-decoration: none;
   font-size: 13px;
-  /* Changed margin to ensure even spacing on both sides */
   margin: 0 10px;
   transition: var(--transition);
   cursor: pointer;
@@ -707,12 +698,10 @@ footer {
 }
 
 .grid-container {
-  /* FIX: Removed 'margin-left: 20% auto' which is invalid syntax */
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  /* CHANGE 5: If the grid width is less than container, this centers it */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -729,10 +718,10 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-/* Full screen background dim */
+
 .modal-overlay {
   position: fixed;
-  inset: 0; /* Shortcut for top, left, right, bottom: 0 */
+  inset: 0;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   display: flex;
@@ -741,7 +730,7 @@ footer {
   z-index: 2000;
 }
 
-/* The actual white/dark box */
+
 .modal-content {
   background: #121212;
   border: 1px solid #c5a059;
