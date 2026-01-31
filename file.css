@@ -1,0 +1,241 @@
+:root {
+  --dark: rgb(26, 15, 10);
+  --gold: rgb(253, 181, 0);
+  --gold-light: rgb(242, 185, 94);
+  --beige: rgb(253, 250, 246);
+  --white: rgb(255, 255, 255);
+  --text-muted: rgba(26, 15, 10, 0.6);
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--beige);
+  color: var(--dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+/* Header */
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("https://dt4l9bx31tioh.cloudfront.net/eazymedia/restaurant/330099/restaurant020241024104021.jpg")
+    center/cover no-repeat;
+  opacity: 0.85;
+  color: var(--white);
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.subtitle {
+  font-size: 18px;
+  letter-spacing: 8px;
+  color: var(--gold);
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgb(41, 40, 40);
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 80px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px gray;
+}
+
+.hero h1 span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  text-shadow: 2px 2px 4px gray;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+  background: var(--gold);
+  color: var(--dark);
+}
+.btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-3px);
+}
+
+.btn-block {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: clamp(32px, 8vw, 60px);
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+}
+/* --- LOCATIONS --- */
+.locations-section {
+  padding: 120px 0;
+  background: var(--white);
+}
+
+.section-label {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 11px;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-header h2 {
+  color: rgb(164, 163, 163);
+  font-size: 45px;
+}
+
+.section-header h2.light {
+  color: var(--white);
+}
+
+.locations-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.location-card {
+  background: var(--beige);
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.location-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.location-img {
+  height: 250px;
+  overflow: hidden;
+}
+
+.location-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+.location-card:hover .location-img img {
+  transform: scale(1.1);
+}
+
+.location-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.location-content h3 {
+  color: black;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.location-tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.location-content p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 25px;
+}
+
+.location-link {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--dark);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 4px;
+}
+
+.location-link:hover {
+  color: var(--gold);
+}
+@media (max-width: 992px) {
+  .locations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+}
